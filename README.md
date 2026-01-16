@@ -24,8 +24,8 @@ FastGS is a **general acceleration framework** that supercharges 3D Gaussian Spl
 
 This version extends the original FastGS with additional features:
 
-- **🌊 Depth Prediction**: Integrated depth prediction capabilities for enhanced 3D understanding and scene reconstruction
-- **🎮 RTX 50-Series Support**: Optimized compatibility and performance for NVIDIA RTX 50-series GPUs
+- **🌊 Depth Prediction**: Integrated depth prediction 
+- **🎮 RTX 50-Series Support**: Tested compatibility support for NVIDIA RTX 50-series GPUs
 - **🖼️ UV Environment**: Added UV mapping support for improved texture handling and environment rendering
 
 ## 📢 Latest Updates
