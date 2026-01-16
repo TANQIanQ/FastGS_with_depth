@@ -71,8 +71,9 @@ Our testing environment uses the following CUDA configuration:
 | Conda environment CUDA version        | 11.6             |
 | Ubuntu system `nvidia-smi` CUDA       | 12.2             |
 | `nvcc -V` compiler version            | 11.8 (v11.8.89)  |
+| **CUDA 12.8 Support**                  | ✅ Compatible     |
 
-> **Note**: The Conda CUDA and system CUDA versions may differ. The compiler version (`nvcc`) is what matters for PyTorch extensions compilation (diff-gaussian-rasterization_fastgs).
+> **Note**: The Conda CUDA and system CUDA versions may differ. The compiler version (`nvcc`) is what matters for PyTorch extensions compilation (diff-gaussian-rasterization_fastgs). This version also supports CUDA 12.8.
 
 
 ## 🚀 Quick Start
@@ -95,6 +96,16 @@ SET DISTUTILS_USE_SDK=1
 # Create and activate environment
 conda env create --file environment.yml
 conda activate fastgs
+```
+
+**UV Sync Support**: You can also use UV for faster dependency management:
+
+```shell
+# Install UV (if not already installed)
+pip install uv
+
+# Sync dependencies with UV
+uv sync
 ```
 
 ### 📂 Dataset Organization
